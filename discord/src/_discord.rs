@@ -3,6 +3,8 @@ use futures::{SinkExt, StreamExt};
 use serde_json::json;
 use reqwest::Client;
 
+#[derive(Debug, Clone)]
+
 pub struct DiscordBot {
     pub token: String,
 }

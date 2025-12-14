@@ -1,6 +1,7 @@
 use super::_user;
 
-struct Message<'a> {
+#[derive(Debug, Clone)]
+pub struct Message<'a> {
     pub activity: (),
     pub application: (),
     pub application_id: (),
